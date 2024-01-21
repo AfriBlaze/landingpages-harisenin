@@ -26,18 +26,18 @@ nav .logo {
     align-items: left;
 }
 
+nav .logo img {
+    padding-top: 0px;
+    width: 80px;
+    height: 60px;
+}
+
 nav .logo a {
     font-size: 40px;
     font-family: "agency FB";
     color: #000000;
     display: flex;
     font-weight: bold;
-}
-
-nav .logo img {
-    padding-top: 0px;
-    width: 80px;
-    height: 60px;
 }
 
 .nav-links {
@@ -65,14 +65,14 @@ nav .logo img {
     margin: 0 auto;
 }
 
-.content-wrap {
+.content-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 50%;
 }
 
-.button {
+.btn {
     padding: 18px 34px;
     font-size: 18px;
     font-weight: 700;
@@ -86,8 +86,7 @@ nav .logo img {
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    line-height: 1.5;
-    border-radius: 0.25;
+    line-height: 1,5;
 
 }
 
@@ -119,4 +118,51 @@ footer {
 
 .footer-text p a {
     color: inherit;
+}
+
+/* responsive */
+
+@media screen and (max-width:768px) {
+    nav {
+        flex-direction: initial;
+        margin: 0rem;
+    }
+
+    nav .logo {
+        margin-top: 2rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    nav ul {
+        padding-inline-start: 0;
+        margin: 3rem;
+    }
+
+    h1 {
+        margin-top: 0px;
+    }
+    logo p {
+        left: 100px;
+    }
+    .content-wrapper {
+        max-width: 100% !important;
+        margin-top: auto;
+    }
+
+    img {
+        width: 60%;
+        margin: 0 auto;
+        padding: 2rem 0 2rem 0;
+    }
+    footer {
+        flex-direction: initial;
+        margin: 0rem;
+    }
+}
+
+@media screen and (min-width: 100px) {
+    .contents {
+        padding-top: 6rem;
+    }
 }
